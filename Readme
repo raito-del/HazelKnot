@@ -1,0 +1,27 @@
+# Hazelknot
+
+Handmade crochet online shop. Orders are placed through Facebook Messenger.
+
+## Live site
+
+https://আপনার-username.github.io/hazelknot/
+
+## Files
+
+- `index.html` - page structure (text and sections)
+- `css/style.css` - main theme and colors
+- `css/entry.css` - entry screen animation
+- `js/data.js` - shop name, Messenger username, products
+- `js/utils.js` - message, copy and toast helpers
+- `js/entry.js` - entry screen logic
+- `js/shop.js` - shop, product popup, custom order
+
+## How to edit
+
+- Change products, prices and the Messenger username in `js/data.js`.
+- Change colors in the `:root` block at the top of `css/style.css`.
+- Change the entry animation in `css/entry.css`.
+
+## Notes
+
+Upload all files and folders together. Opening `index.html` alone may not load the styles and scripts.

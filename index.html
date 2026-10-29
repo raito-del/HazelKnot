@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Hazelknot | Handmade Crochet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Hind+Siliguri:wght@400;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/entry.css">
+</head>
+<body class="locked">
+
+<!-- ===== ENTRY SCREEN ===== -->
+<div id="entry">
+  <div class="entry-stage">
+    <div class="spool" id="spoolBtn" title="ক্লিক করুন"><div class="spool-core"></div></div>
+    <svg class="wave-line" viewBox="0 0 620 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C 60 0, 120 120, 180 60 S 300 0, 360 60 S 480 120, 540 60 S 600 0, 620 60" />
+    </svg>
+    <h1 class="entry-title">Hazel<span class="knot">knot</span></h1>
+    <p class="entry-script">handmade with love</p>
+    <button class="entry-cta" id="ctaBtn">ভিতরে আসুন <span>→</span></button>
+    <p class="entry-hint">ক্রোশে বলটিতে ক্লিক করুন</p>
+  </div>
+</div>
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <a href="#top" class="logo">Hazel<b>knot</b></a>
+  <ul>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#custom">Custom Order</a></li>
+    <li><a href="#about">About</a></li>
+    <li class="keep"><a href="#shop" id="wishNav">❤️ <span class="wish-count" id="wishCount">0</span></a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+  <div>
+    <span class="eyebrow">🧶 Handmade in Bangladesh</span>
+    <h1>Hazelknot</h1>
+    <p class="sub">Turning yarn into cozy, handcrafted joy. Crochet bags, bonnets, keychains and little gifts made with love. Shipping across BD. Custom orders open 💌</p>
+    <div class="cta-row">
+      <a href="#shop" class="btn">🛍️ Shop Now</a>
+      <a href="#custom" class="btn ghost">✏️ Custom Order</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="orbit two"></div>
+    <div class="yarn-ball"></div>
+    <div class="orbit"></div>
+    <span class="sparkle" style="top:4%; right:8%">✨</span>
+    <span class="sparkle" style="bottom:12%; left:2%; animation-delay:1s">💖</span>
+    <span class="sparkle" style="top:50%; right:-2%; animation-delay:.5s">⭐</span>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- ===== SHOP ===== -->
+<section id="shop">
+  <div class="section-head">
+    <h2>Latest Creations</h2>
+    <div class="stitch-line"></div>
+    <p>যেকোনো পণ্যে ক্লিক করুন, বিবরণ দেখুন, তারপর Messenger-এ অর্ডার পাঠান।</p>
+  </div>
+  <div class="shop-tools">
+    <div class="filters" id="filters"></div>
+    <div class="tools-right">
+      <button class="wish-toggle" id="wishToggle">❤️ শুধু পছন্দের</button>
+      <input id="search" type="search" placeholder="পণ্য খুঁজুন...">
+      <select id="sort">
+        <option value="default">ডিফল্ট</option>
+        <option value="price-asc">দাম: কম থেকে বেশি</option>
+        <option value="price-desc">দাম: বেশি থেকে কম</option>
+        <option value="name">নাম অনুযায়ী</option>
+      </select>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- ===== CUSTOM ORDER ===== -->
+<section id="custom">
+  <div class="section-head">
+    <h2>Make Something<br>Just for You</h2>
+    <div class="stitch-line"></div>
+    <p>যা চান লিখুন, অর্ডার কোডসহ সরাসরি Messenger-এ চলে যাবে।</p>
+  </div>
+  <div class="order-box">
+    <div class="field"><label for="cName">আপনার নাম</label><input id="cName" type="text" placeholder="যেমন: রোকেয়া"></div>
+    <div class="field"><label for="cItem">কী বানাতে চান?</label><select id="cItem"></select></div>
+    <div class="field"><label for="cDetails">রং, সাইজ ও বিস্তারিত</label><textarea id="cDetails" placeholder="যেমন: মেরুন রং, গোল ব্যাগ, পার্ল স্ট্র্যাপ"></textarea></div>
+    <div class="field"><label for="cArea">ডেলিভারি এলাকা (জেলা)</label><input id="cArea" type="text" placeholder="যেমন: ঢাকা"></div>
+    <button class="btn" id="customBtn">💌 Messenger-এ কাস্টম অর্ডার পাঠান</button>
+    <p class="note-small" style="text-align:center">আপনার তথ্য শুধু আপনার ক্লিপবোর্ডে কপি হবে, ওয়েবসাইটে কিছু সংরক্ষণ হবে না।</p>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about">
+  <div>
+    <h2>Stitch by stitch,<br>with love 🌸</h2>
+    <p class="lead" id="aboutText"></p>
+  </div>
+  <div class="about-card">
+    <h3>কেন Hazelknot?</h3>
+    <ul id="aboutPoints"></ul>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="logo">Hazel<b>knot</b></div>
+  <p>Arts &amp; Crafts Store · Shipping across BD 📦</p>
+  <a class="fl" id="footerMsg" href="#" target="_blank" rel="noopener">💬 Messenger-এ মেসেজ দিন</a>
+  <p style="margin-top:26px; font-size:.85rem;">© <span id="year"></span> Hazelknot. Made with yarn &amp; love.</p>
+</footer>
+
+<!-- ===== PRODUCT MODAL ===== -->
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-wrap">
+    <button class="modal-close" id="modalClose" aria-label="বন্ধ করুন">✕</button>
+    <div class="modal-box">
+      <div class="modal-img" id="mImgWrap"></div>
+      <div class="modal-info">
+        <span class="card-cat" id="mCat"></span>
+        <h3 id="mName"></h3>
+        <div class="price" id="mPrice"></div>
+        <p id="mDesc" style="color:#6b504a"></p>
+        <div class="field" id="mColorWrap"><label for="mColor">রং বেছে নিন</label><select id="mColor"></select></div>
+        <div class="field"><label for="mQty">পরিমাণ</label><input id="mQty" type="number" min="1" value="1"></div>
+        <div class="row2">
+          <button class="btn" id="mOrder" style="flex:1">💬 Messenger-এ অর্ডার করুন</button>
+          <button class="btn share" id="mShare">🔗 শেয়ার</button>
+        </div>
+        <p class="note-small">অর্ডার কোডসহ মেসেজ Messenger-এ চলে যাবে।</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/entry.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
